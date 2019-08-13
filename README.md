@@ -1,0 +1,2 @@
+# allindusk.github.io
+blog
