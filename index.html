@@ -18,7 +18,7 @@
 $(document).ready(function(){
 	$("button").click(function(){
 		$.get("https://www.apiopen.top/femaleNameApi?page=1",function(data,status){
-			alert("数据: " + data + "\n状态: " + status);
+			alert("数据: " +  data.data[0].femalename + "\n状态: " + status);
 		});
 	});
 });
@@ -29,6 +29,6 @@ $(document).ready(function(){
 <p>从左边开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
 <div id="grad1"></div>
     
- <button>发送一个 HTTP GET 请求并获取返回结果</button>
+ <button>获取一个个性网名</button>
   </body>
 </html>
