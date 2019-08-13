@@ -12,12 +12,23 @@
     background: linear-gradient(to right, red , blue); /* 标准的语法（必须放在最后） */
 }
 </style>
+<script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$.get("https://www.apiopen.top/femaleNameApi?page=1",function(data,status){
+			alert("数据: " + data + "\n状态: " + status);
+		});
+	});
+});
+</script>
   </head>
   <body>
 <h3>线性渐变 - 从左到右</h3>
 <p>从左边开始的线性渐变。起点是红色，慢慢过渡到蓝色：</p>
-
 <div id="grad1"></div>
     
+ <button>发送一个 HTTP GET 请求并获取返回结果</button>
   </body>
 </html>
