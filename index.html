@@ -22,6 +22,25 @@ $(document).ready(function(){
 		});
 	});
 });
+/**domainedit
+let  str = 'hello world';
+let  ucstr = '';
+for (let i = 0; i < str.length; i++) {
+    let tmpstr1 = str.charCodeAt(i) + '';
+    let tmpstr2 = tmpstr1;
+    for (; tmpstr2.length < 3; tmpstr2 = '0' + tmpstr2) { }
+    console.log(tmpstr1 + ' ' + tmpstr2);
+    ucstr = ucstr + tmpstr2;
+}
+console.log(ucstr);
+let  subucstr='';
+let  truestr='';
+for (let i = 0; i < ucstr.length; i=i+3) {
+    let tmpsub =parseInt(ucstr.substr(i, 3));
+    truestr=truestr+String.fromCharCode(tmpsub);
+}
+console.log(truestr);
+**/	
 </script>
   </head>
   <body>
